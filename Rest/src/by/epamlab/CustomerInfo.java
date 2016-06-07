@@ -10,28 +10,26 @@ import javax.ws.rs.core.MediaType;
 
 import org.xml.sax.SAXException;
 
-import by.epamlab.beans.ifaces.IReservationDAO;
-import by.epamlab.beans.reservations.Reservation;
+import by.epamlab.beans.ifaces.IRepositoryDAO;
 import by.epamlab.beans.reservations.customer.Customer;
-import by.epamlab.factories.ReservationFactory;
+import by.epamlab.factories.RepositoryFactory;
 
 @Path("CustomerInfoService")
 public class CustomerInfo {
 
 	// http://localhost:8080/Rest/rest/CustomerInfoService/customer/[reservationFileName]
-
 	@GET
 	@Path("/customer/{reservationFileName}")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String customer(@PathParam("reservationFileName") String reservationFileName) {
-		Reservation reservation = null;
-		IReservationDAO reservationDAO = ReservationFactory.getClassFromFactory();
+		Customer customer = null;
 		try {
-			reservation = reservationDAO.getReservation(reservationFileName);
+			IRepositoryDAO IRepositoryDAO = RepositoryFactory.getRepository();
+			customer = IRepositoryDAO.getReservation(reservationFileName).getCustomer();
 		} catch (IOException | SAXException e) {
-			return e.getMessage();
+			return "No such reservation!";
 		}
-		Customer customer = reservation.getCustomer();
-		return customer.getFirstName() + " " + customer.getLastName();
+		return customer.getFirstName() + " " + customer.getLastName() + "\nEmail: "
+				+ customer.getEmail().getEmailAddress() + "\nPhone: " + customer.getPhone().getPhoneNumber();
 	}
 }
