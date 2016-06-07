@@ -1,0 +1,550 @@
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<Reservation xmlns="urn:reservation.rqrs.datalex.com" Code="0004257753" Description="SYX - CKG [2016/03/07]" Hidden="false" HistorySequence="0" InitialBookingDateTime="2016-02-11T18:15:11.000" IntDomIndicator="DOM" Source="WESTAIR_WEB" Status="TICKETED">
+	<ResComponent BookingMethod="ReservationAirBookingSv" ComponentTypeCode="AIR" CreateDateTime="2016-02-11T18:15:12.000" InternalStatus="BOOKED" InventorySystem="TRAVELSKY" LastUpdatedDateTime="2016-02-29T10:48:06.000" ProductCode="AIR" Quantity="1" ResComponentDocID="RESV_RETRIEVE_ResComponent3892739" Sequence="1" SessionDocRef="RESV_RETRIEVE_SessionDetails2403178" SessionSequence="1" SourceCode="WESTAIR_WEB" Status="BOOKED">
+		<Event EventCompletedDateTime="2016-02-11T18:16:26.000" EventEnteredDateTime="2016-02-11T18:16:26.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502872" EventTypeCode="BOOK_COMPONENT" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="2" Source="WESTAIR_WEB" Username="13883296608"/>
+		<Event EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502881" EventTypeCode="HANDOFF" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="26" Source="WESTAIR_WEB"/>
+		<Event EventCompletedDateTime="2016-02-11T18:27:22.000" EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502882" EventTypeCode="DOCUMENT_COMPONENT" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="27" Source="WESTAIR_WEB" Username="13883296608"/>
+		<Event EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502883" EventScheduledDateTime="2016-02-11T18:27:22.000" EventTypeCode="PROVIDER_PAYMENT_MADE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="28" Source="WESTAIR_WEB" Username="13883296608"/>
+		<Event EventCompletedDateTime="2016-02-29T10:46:31.000" EventEnteredDateTime="2016-02-29T10:46:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502884" EventTypeCode="REBOOK_COMPONENT" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="48" Source="WESTAIR_WEB" Username="13883296608"/>
+		<ExtraInformation Name="EndorsementInformation" Sequence="4" Value="??????"/>
+		<ExtraInformation ExtendedValue="?????????????&#10;&#10;????.&#10;???????????????72???????? - 40%; &#10;?????72????12?????- 60%?  &#10; ?????12????????? - 100%.&#10;?????????72????????- 60%; &#10; ?????72????12?????- 80%?  &#10; ?????12????????? - 100%.&#10;10KG??????.&#10;???????5KG??????20cm x 30cm x 40cm??????????.&#10;????????." Name="FARE_RULES" Sequence="3" Value="Q1/45"/>
+		<ExtraInformation Name="FormOfPayment" Sequence="5" Value="CC/H1"/>
+		<ExtraInformation ExtendedValue="SYX PN CKG 690.00Q1/45 CNY690.00END" Name="LinearFareConstruction" Sequence="2"/>
+		<ExtraInformation Name="UIElementUniqueIdentifier" Sequence="1" Value="cb934299-c3d9-4a9f-a257-69f0eb0ee862"/>
+		<BookRemoteRef Name="TRAVELSKY" RemoteRefType="GDS_PNR_REF" Sequence="1" Value="NTV2Q8"/>
+		<ItinerarySegmentLink DisplayOrder="1" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" SegmentType="ORIGIN" Sequence="9"/>
+		<TaxFee Amount="50" ChargeableAmount="50" CurrencyCode="CNY" Description="Airport Fee (Domestic)" IsPartOfBaseFare="false" IsVAT="false" Sequence="1" ServiceFee="false" TaxCollectTypeCode="PRECOLLECTED" TaxFeeCode="CN" TaxFeeDocID="RESV_RESVCOMP_RETRIEVE_TaxFee6232349"/>
+		<TaxFee Amount="0" ChargeableAmount="0" CurrencyCode="CNY" Description="UNKNOWN" IsPartOfBaseFare="false" IsVAT="false" Sequence="2" ServiceFee="true" TaxCollectTypeCode="PRECOLLECTED" TaxFeeCode="YQ" TaxFeeDocID="RESV_RESVCOMP_RETRIEVE_TaxFee6232350"/>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="60.0" PolicyCode="CHANGE_60_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884001" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="60% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="1">
+			<CalculatedAmountDue SellingPrice="414" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="GROSS" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="100" PolicyCode="REFUND_100_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884002" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 100 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="2">
+			<CalculatedAmountDue SellingPrice="690" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="40.0" PolicyCode="CHANGE_40_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884003" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="40% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="3">
+			<CalculatedAmountDue SellingPrice="276" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="60.0" PolicyCode="REFUND_60_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884004" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 60 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="4">
+			<CalculatedAmountDue SellingPrice="414" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="100" PolicyCode="CHANGE_100_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884005" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="100% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="5">
+			<CalculatedAmountDue SellingPrice="690" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="80.0" PolicyCode="REFUND_80_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884006" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 80 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="6">
+			<CalculatedAmountDue SellingPrice="552" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy ApplicationLevel="FareInfoLevel" ConsumerPaysProvider="false" PolicyCode="Q1/45" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884007" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" ResidualValueApplication="None" Sequence="7"/>
+		<Unit AirFareRulesDocRef="RESV_RETRIEVE_AirFareRules2254142" AirFareRulesSequence="1" DirectionIndicator="ONE_WAY" EndDateTime="2016-03-07T15:45:00.000" FareAirlineCode="PN" FareEndCityCode="CKG" FareFamilyDocRef="RESV_RETRIEVE_FareFamily2278128" FareFamilySequence="1" FareLocationCategoryCode="A" FareStartCityCode="SYX" PlatingCarrier="PN" PriceByFareBasisCode="false" PricingRateCode="Q1/45" PricingSource="SCHEDULED" PricingSystem="TDP_FARES" ProviderRulesDocRef="RESV_RETRIEVE_ProviderRules2254408" ProviderRulesSequence="1" QuoteDateTime="2016-02-11T18:15:12.000" SellingPrice="690" SellingPriceCurrencyCode="CNY" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="SEAT" UnitDocID="RESV_RESVCOMP_RETRIEVE_Unit3923373">
+			<UnitDetail EndDateTime="2016-03-07T15:45:00.000" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="SEAT">
+				<TaxFeeDetail Amount="50" ChargeableAmount="50" TaxFeeDocRef="RESV_RESVCOMP_RETRIEVE_TaxFee6232349" TaxFeeSequence="1"/>
+				<TaxFeeDetail Amount="0" ChargeableAmount="0" TaxFeeDocRef="RESV_RESVCOMP_RETRIEVE_TaxFee6232350" TaxFeeSequence="2"/>
+			</UnitDetail>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884001" PolicySequence="1"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884002" PolicySequence="2"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884003" PolicySequence="3"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884004" PolicySequence="4"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884005" PolicySequence="5"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884006" PolicySequence="6"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884007" PolicySequence="7"/>
+		</Unit>
+		<GuestComposition AgeAtFirstConsume="-1" DateOfBirth="1980-07-25" GuestCompositionID="RESV_RESVCOMP_RETRIEVE_GuestComposition3892357" GuestDocRef="RESV_RETRIEVE_Guest2956678" GuestSequence="1" GuestTypeCode="ADT" HostLastName="???" IncrementalGuestNumber="1" OverrideFirstName="??" OverrideLastName="?" QuotedPassengerTypeCode="ADT" Sequence="1" SyncStatus="SYNCHED">
+			<GuestItinerarySegment GuestItinerarySegmentDocID="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912058" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" Sequence="1" Status="RR">
+				<AirInfo ClassOfService="Economy" InventoryClass="Q1" OverrideSeatFlag="false"/>
+				<FormOfIdentificationLink FormOfIdentificationDocRef="RESV_GUEST_RETRIEVE_FormOfIdentification2971074" FormOfIdentificationSequence="1" Sequence="1" SyncStatus="SYNCHED"/>
+				<AirSupplementaryElement SendToVendor="true" Sequence="14" SyncStatus="SYNCHED">
+					<SpecialServiceRequest AirlineCode="PN" Code="SPML" Status="HK" Text="SYXCKG 6212 Q07Mar MEAL-U"/>
+				</AirSupplementaryElement>
+				<UnitLink UnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923373" UnitSequence="1"/>
+			</GuestItinerarySegment>
+			<RemoteSystemFareQuotePTC ContextCode="TDP_FARES" PassengerTypeCode="ADT" Sequence="1"/>
+		</GuestComposition>
+		<ProviderPayment AmountPaid="2170.00" CreditCardAuthorisationCode="2016021100001000840064140966" CreditCardAuthorisationDateTime="2016-02-11T18:27:07.000" CreditCardCompanyCode="F1" CurrencyCode="CNY" DatePaid="2016-02-11T18:27:22.000" EventSequence="28" FormOfPaymentTypeCode="VIRTUALBANK" ProviderPaymentID="RESV_RESVCOMP_RETRIEVE_ProviderPayment648565" Sequence="1" TransactionID="ANTV2Q811FEB162">
+			<ExtraInformation Name="PaymentIdentifier" Sequence="1" Value="1455186259811"/>
+			<ExtraInformation Name="out_trade_no" Sequence="2" Value="ANTV2Q811FEB162"/>
+		</ProviderPayment>
+		<Document DocID="RESV_RESVCOMP_RETRIEVE_Document663829" DocType="ETICKET" DocumentMethod="ReservationAirTicketingSv" DocumentStatus="ISSUED" EventDocRef="RESV_RESVCOMP_RETRIEVE_Event4502882" EventSequence="27" IssuedDateTime="2016-02-11T18:27:22.000" ManualIssue="true" NameOnDocument="???" PrimaryDocNumber="847-2432638368" Sequence="1">
+			<DocumentValue DocumentValueType="ISSUED" SellingPrice="690" SellingPriceCurrencyCode="CNY" Sequence="1" TransactionDate="2016-02-11T00:00:00.000">
+				<DocumentTaxDetail SellingPrice="50" SellingPriceCurrencyCode="CNY" Sequence="1" TaxFeeCode="CN"/>
+				<DocumentResCompUnitLink ResComponentSequence="1" ResComponentUnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923373" ResComponentUnitSequence="1" Sequence="1">
+					<DocumentItinerarySegmentLink CouponNumber="1" CouponStatus="OPEN" GuestCompositionSequence="1" GuestItinerarySegmentDocRef="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912058" GuestItinerarySegmentSequence="1"/>
+				</DocumentResCompUnitLink>
+			</DocumentValue>
+			<ProviderPaymentLink ProviderPaymentDocRef="RESV_RESVCOMP_RETRIEVE_ProviderPayment648565" ProviderPaymentSequence="1"/>
+		</Document>
+		<AirSupplementaryElement SendToVendor="true" Sequence="2" SyncStatus="SYNCHED">
+			<OtherServiceInformation AirlineCode="PN" Text="CTCM13883296608"/>
+		</AirSupplementaryElement>
+		<AirSupplementaryElement SendToVendor="true" Sequence="3" SyncStatus="SYNCHED">
+			<OtherServiceInformation AirlineCode="PN" Text="YIGAOZHICHAYIHUAFUWU"/>
+		</AirSupplementaryElement>
+		<AirSupplementaryElement SendToVendor="true" Sequence="4" SyncStatus="SYNCHED">
+			<SpecialServiceRequest AirlineCode="PN" Code="FOID" Status="HK" Text="NI510202198007253212"/>
+		</AirSupplementaryElement>
+	</ResComponent>
+	<ResComponent BookingMethod="ReservationAirBookingSv" ComponentTypeCode="AIR" CreateDateTime="2016-02-11T18:15:12.000" InternalStatus="BOOKED" InventorySystem="TRAVELSKY" LastUpdatedDateTime="2016-02-29T10:48:06.000" ProductCode="AIR" Quantity="1" ResComponentDocID="RESV_RETRIEVE_ResComponent3892740" Sequence="2" SessionDocRef="RESV_RETRIEVE_SessionDetails2403178" SessionSequence="1" SourceCode="WESTAIR_WEB" Status="BOOKED">
+		<Event EventCompletedDateTime="2016-02-11T18:16:26.000" EventEnteredDateTime="2016-02-11T18:16:26.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502873" EventTypeCode="BOOK_COMPONENT" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="3" Source="WESTAIR_WEB" Username="13883296608"/>
+		<Event EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502878" EventTypeCode="HANDOFF" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="23" Source="WESTAIR_WEB"/>
+		<Event EventCompletedDateTime="2016-02-11T18:27:22.000" EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502879" EventTypeCode="DOCUMENT_COMPONENT" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="24" Source="WESTAIR_WEB" Username="13883296608"/>
+		<Event EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502880" EventScheduledDateTime="2016-02-11T18:27:22.000" EventTypeCode="PROVIDER_PAYMENT_MADE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="25" Source="WESTAIR_WEB" Username="13883296608"/>
+		<ExtraInformation Name="EndorsementInformation" Sequence="4" Value="??????"/>
+		<ExtraInformation ExtendedValue="?????????????&#10;&#10;????.&#10;???????????????72???????? - 40%; &#10;?????72????12?????- 60%?  &#10; ?????12????????? - 100%.&#10;?????????72????????- 60%; &#10; ?????72????12?????- 80%?  &#10; ?????12????????? - 100%.&#10;10KG??????.&#10;???????5KG??????20cm x 30cm x 40cm??????????.&#10;????????." Name="FARE_RULES" Sequence="3" Value="Q1/45"/>
+		<ExtraInformation Name="FormOfPayment" Sequence="5" Value="CC/H1"/>
+		<ExtraInformation ExtendedValue="SYX PN CKG 690.00Q1/45 CNY690.00END" Name="LinearFareConstruction" Sequence="2"/>
+		<ExtraInformation Name="UIElementUniqueIdentifier" Sequence="1" Value="cb934299-c3d9-4a9f-a257-69f0eb0ee862"/>
+		<BookRemoteRef Name="TRAVELSKY" RemoteRefType="GDS_PNR_REF" Sequence="1" Value="NTV2Q8"/>
+		<ItinerarySegmentLink DisplayOrder="1" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" SegmentType="ORIGIN" Sequence="9"/>
+		<TaxFee Amount="50" ChargeableAmount="50" CurrencyCode="CNY" Description="Airport Fee (Domestic)" IsPartOfBaseFare="false" IsVAT="false" Sequence="1" ServiceFee="false" TaxCollectTypeCode="PRECOLLECTED" TaxFeeCode="CN" TaxFeeDocID="RESV_RESVCOMP_RETRIEVE_TaxFee6232351"/>
+		<TaxFee Amount="0" ChargeableAmount="0" CurrencyCode="CNY" Description="UNKNOWN" IsPartOfBaseFare="false" IsVAT="false" Sequence="2" ServiceFee="true" TaxCollectTypeCode="PRECOLLECTED" TaxFeeCode="YQ" TaxFeeDocID="RESV_RESVCOMP_RETRIEVE_TaxFee6232352"/>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="60.0" PolicyCode="CHANGE_60_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884008" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="60% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="8">
+			<CalculatedAmountDue SellingPrice="414" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="GROSS" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="100" PolicyCode="REFUND_100_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884009" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 100 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="9">
+			<CalculatedAmountDue SellingPrice="690" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="40.0" PolicyCode="CHANGE_40_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884010" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="40% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="10">
+			<CalculatedAmountDue SellingPrice="276" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="60.0" PolicyCode="REFUND_60_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884011" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 60 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="11">
+			<CalculatedAmountDue SellingPrice="414" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="100" PolicyCode="CHANGE_100_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884012" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="100% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="12">
+			<CalculatedAmountDue SellingPrice="690" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="80.0" PolicyCode="REFUND_80_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884013" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 80 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="13">
+			<CalculatedAmountDue SellingPrice="552" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy ApplicationLevel="FareInfoLevel" ConsumerPaysProvider="false" PolicyCode="Q1/45" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884014" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" ResidualValueApplication="None" Sequence="14"/>
+		<Unit AirFareRulesDocRef="RESV_RETRIEVE_AirFareRules2254142" AirFareRulesSequence="1" DirectionIndicator="ONE_WAY" EndDateTime="2016-03-07T15:45:00.000" FareAirlineCode="PN" FareEndCityCode="CKG" FareFamilyDocRef="RESV_RETRIEVE_FareFamily2278128" FareFamilySequence="1" FareLocationCategoryCode="A" FareStartCityCode="SYX" PlatingCarrier="PN" PriceByFareBasisCode="false" PricingRateCode="Q1/45" PricingSource="SCHEDULED" PricingSystem="TDP_FARES" ProviderRulesDocRef="RESV_RETRIEVE_ProviderRules2254408" ProviderRulesSequence="1" QuoteDateTime="2016-02-11T18:15:12.000" SellingPrice="690" SellingPriceCurrencyCode="CNY" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="SEAT" UnitDocID="RESV_RESVCOMP_RETRIEVE_Unit3923374">
+			<UnitDetail EndDateTime="2016-03-07T15:45:00.000" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="SEAT">
+				<TaxFeeDetail Amount="50" ChargeableAmount="50" TaxFeeDocRef="RESV_RESVCOMP_RETRIEVE_TaxFee6232351" TaxFeeSequence="1"/>
+				<TaxFeeDetail Amount="0" ChargeableAmount="0" TaxFeeDocRef="RESV_RESVCOMP_RETRIEVE_TaxFee6232352" TaxFeeSequence="2"/>
+			</UnitDetail>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884008" PolicySequence="8"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884009" PolicySequence="9"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884010" PolicySequence="10"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884011" PolicySequence="11"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884012" PolicySequence="12"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884013" PolicySequence="13"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884014" PolicySequence="14"/>
+		</Unit>
+		<GuestComposition AgeAtFirstConsume="-1" DateOfBirth="1979-03-29" GuestCompositionID="RESV_RESVCOMP_RETRIEVE_GuestComposition3892358" GuestDocRef="RESV_RETRIEVE_Guest2956679" GuestSequence="2" GuestTypeCode="ADT" HostLastName="??" IncrementalGuestNumber="1" OverrideFirstName="?" OverrideLastName="?" QuotedPassengerTypeCode="ADT" Sequence="1" SyncStatus="SYNCHED">
+			<GuestItinerarySegment GuestItinerarySegmentDocID="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912059" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" Sequence="1" Status="RR">
+				<AirInfo ClassOfService="Economy" InventoryClass="Q1" OverrideSeatFlag="false"/>
+				<FormOfIdentificationLink FormOfIdentificationDocRef="RESV_GUEST_RETRIEVE_FormOfIdentification2971075" FormOfIdentificationSequence="1" Sequence="1" SyncStatus="SYNCHED"/>
+				<AirSupplementaryElement SendToVendor="true" Sequence="15" SyncStatus="SYNCHED">
+					<SpecialServiceRequest AirlineCode="PN" Code="SPML" Status="HK" Text="SYXCKG 6212 Q07Mar MEAL-U"/>
+				</AirSupplementaryElement>
+				<UnitLink UnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923374" UnitSequence="1"/>
+			</GuestItinerarySegment>
+			<RemoteSystemFareQuotePTC ContextCode="TDP_FARES" PassengerTypeCode="ADT" Sequence="1"/>
+		</GuestComposition>
+		<ProviderPayment AmountPaid="2170.00" CreditCardAuthorisationCode="2016021100001000840064140966" CreditCardAuthorisationDateTime="2016-02-11T18:27:07.000" CreditCardCompanyCode="F1" CurrencyCode="CNY" DatePaid="2016-02-11T18:27:22.000" EventSequence="25" FormOfPaymentTypeCode="VIRTUALBANK" ProviderPaymentID="RESV_RESVCOMP_RETRIEVE_ProviderPayment648566" Sequence="1" TransactionID="ANTV2Q811FEB162">
+			<ExtraInformation Name="PaymentIdentifier" Sequence="1" Value="1455186259811"/>
+			<ExtraInformation Name="out_trade_no" Sequence="2" Value="ANTV2Q811FEB162"/>
+		</ProviderPayment>
+		<Document DocID="RESV_RESVCOMP_RETRIEVE_Document663830" DocType="ETICKET" DocumentMethod="ReservationAirTicketingSv" DocumentStatus="ISSUED" EventDocRef="RESV_RESVCOMP_RETRIEVE_Event4502879" EventSequence="24" IssuedDateTime="2016-02-11T18:27:22.000" ManualIssue="true" NameOnDocument="??" PrimaryDocNumber="847-2432638370" Sequence="1">
+			<DocumentValue DocumentValueType="ISSUED" SellingPrice="690" SellingPriceCurrencyCode="CNY" Sequence="1" TransactionDate="2016-02-11T00:00:00.000">
+				<DocumentTaxDetail SellingPrice="50" SellingPriceCurrencyCode="CNY" Sequence="1" TaxFeeCode="CN"/>
+				<DocumentResCompUnitLink ResComponentSequence="2" ResComponentUnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923374" ResComponentUnitSequence="1" Sequence="1">
+					<DocumentItinerarySegmentLink CouponNumber="1" CouponStatus="OPEN" GuestCompositionSequence="1" GuestItinerarySegmentDocRef="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912059" GuestItinerarySegmentSequence="1"/>
+				</DocumentResCompUnitLink>
+			</DocumentValue>
+			<ProviderPaymentLink ProviderPaymentDocRef="RESV_RESVCOMP_RETRIEVE_ProviderPayment648566" ProviderPaymentSequence="1"/>
+		</Document>
+		<AirSupplementaryElement SendToVendor="true" Sequence="5" SyncStatus="SYNCHED">
+			<OtherServiceInformation AirlineCode="PN" Text="CTCM13896020322"/>
+		</AirSupplementaryElement>
+		<AirSupplementaryElement SendToVendor="true" Sequence="6" SyncStatus="SYNCHED">
+			<OtherServiceInformation AirlineCode="PN" Text="YIGAOZHICHAYIHUAFUWU"/>
+		</AirSupplementaryElement>
+		<AirSupplementaryElement SendToVendor="true" Sequence="7" SyncStatus="SYNCHED">
+			<SpecialServiceRequest AirlineCode="PN" Code="FOID" Status="HK" Text="NI510224197903290429"/>
+		</AirSupplementaryElement>
+	</ResComponent>
+	<ResComponent BookingMethod="ReservationAirBookingSv" ComponentTypeCode="AIR" CreateDateTime="2016-02-11T18:15:12.000" InternalStatus="BOOKED" InventorySystem="TRAVELSKY" LastUpdatedDateTime="2016-02-29T10:48:06.000" ProductCode="AIR" Quantity="1" ResComponentDocID="RESV_RETRIEVE_ResComponent3892741" Sequence="3" SessionDocRef="RESV_RETRIEVE_SessionDetails2403178" SessionSequence="1" SourceCode="WESTAIR_WEB" Status="BOOKED">
+		<Event EventCompletedDateTime="2016-02-11T18:16:26.000" EventEnteredDateTime="2016-02-11T18:16:26.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502874" EventTypeCode="BOOK_COMPONENT" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="4" Source="WESTAIR_WEB" Username="13883296608"/>
+		<Event EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502875" EventTypeCode="HANDOFF" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="20" Source="WESTAIR_WEB"/>
+		<Event EventCompletedDateTime="2016-02-11T18:27:22.000" EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502876" EventTypeCode="DOCUMENT_COMPONENT" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="21" Source="WESTAIR_WEB" Username="13883296608"/>
+		<Event EventEnteredDateTime="2016-02-11T18:27:22.000" EventID="RESV_RESVCOMP_RETRIEVE_Event4502877" EventScheduledDateTime="2016-02-11T18:27:22.000" EventTypeCode="PROVIDER_PAYMENT_MADE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="22" Source="WESTAIR_WEB" Username="13883296608"/>
+		<ExtraInformation Name="EndorsementInformation" Sequence="4" Value="??????"/>
+		<ExtraInformation ExtendedValue="?????????????&#10;&#10;????.&#10;???????????????72???????? - 40%; &#10;?????72????12?????- 60%?  &#10; ?????12????????? - 100%.&#10;?????????72????????- 60%; &#10; ?????72????12?????- 80%?  &#10; ?????12????????? - 100%.&#10;10KG??????.&#10;???????5KG??????20cm x 30cm x 40cm??????????.&#10;????????." Name="FARE_RULES" Sequence="3" Value="Q1/45"/>
+		<ExtraInformation Name="FormOfPayment" Sequence="5" Value="CC/H1"/>
+		<ExtraInformation ExtendedValue="SYX PN CKG 690.00Q1/45 CNY690.00END" Name="LinearFareConstruction" Sequence="2"/>
+		<ExtraInformation Name="UIElementUniqueIdentifier" Sequence="1" Value="cb934299-c3d9-4a9f-a257-69f0eb0ee862"/>
+		<BookRemoteRef Name="TRAVELSKY" RemoteRefType="GDS_PNR_REF" Sequence="1" Value="NTV2Q8"/>
+		<ItinerarySegmentLink DisplayOrder="1" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" SegmentType="ORIGIN" Sequence="9"/>
+		<TaxFee Amount="0" ChargeableAmount="0" CurrencyCode="CNY" Description="UNKNOWN" IsPartOfBaseFare="false" IsVAT="false" Sequence="1" ServiceFee="true" TaxCollectTypeCode="PRECOLLECTED" TaxFeeCode="YQ" TaxFeeDocID="RESV_RESVCOMP_RETRIEVE_TaxFee6232353"/>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="60.0" PolicyCode="CHANGE_60_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884015" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="60% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="15">
+			<CalculatedAmountDue SellingPrice="414" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="GROSS" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="100" PolicyCode="REFUND_100_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884016" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 100 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="16">
+			<CalculatedAmountDue SellingPrice="690" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="40.0" PolicyCode="CHANGE_40_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884017" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="40% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="17">
+			<CalculatedAmountDue SellingPrice="276" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="60.0" PolicyCode="REFUND_60_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884018" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 60 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="18">
+			<CalculatedAmountDue SellingPrice="414" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="FareInfoLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="100" PolicyCode="CHANGE_100_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884019" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="100% Change Fee" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="19">
+			<CalculatedAmountDue SellingPrice="690" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2010-12-31T00:00:00.000" ApplicationLevel="TicketLevel" ApplicationPriority="1" AssessmentBasis="NET" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="80.0" PolicyCode="REFUND_80_PERCENT" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884020" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Refund Fee of 80 %" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="PenaltyOnly" Sequence="20">
+			<CalculatedAmountDue SellingPrice="552" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy ApplicationLevel="FareInfoLevel" ConsumerPaysProvider="false" PolicyCode="Q1/45" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884021" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" ResidualValueApplication="None" Sequence="21"/>
+		<Unit AirFareRulesDocRef="RESV_RETRIEVE_AirFareRules2254142" AirFareRulesSequence="1" DirectionIndicator="ONE_WAY" EndDateTime="2016-03-07T15:45:00.000" FareAirlineCode="PN" FareEndCityCode="CKG" FareFamilyDocRef="RESV_RETRIEVE_FareFamily2278128" FareFamilySequence="1" FareLocationCategoryCode="A" FareStartCityCode="SYX" PlatingCarrier="PN" PriceByFareBasisCode="false" PricingRateCode="Q1/45" PricingSource="SCHEDULED" PricingSystem="TDP_FARES" ProviderRulesDocRef="RESV_RETRIEVE_ProviderRules2254408" ProviderRulesSequence="1" QuoteDateTime="2016-02-11T18:15:12.000" SellingPrice="690" SellingPriceCurrencyCode="CNY" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="SEAT" UnitDocID="RESV_RESVCOMP_RETRIEVE_Unit3923377">
+			<UnitDetail EndDateTime="2016-03-07T15:45:00.000" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="SEAT">
+				<TaxFeeDetail Amount="0" ChargeableAmount="0" TaxFeeDocRef="RESV_RESVCOMP_RETRIEVE_TaxFee6232353" TaxFeeSequence="1"/>
+			</UnitDetail>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884015" PolicySequence="15"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884016" PolicySequence="16"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884017" PolicySequence="17"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884018" PolicySequence="18"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884019" PolicySequence="19"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884020" PolicySequence="20"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884021" PolicySequence="21"/>
+		</Unit>
+		<GuestComposition AgeAtFirstConsume="-1" DateOfBirth="2013-10-30" GuestCompositionID="RESV_RESVCOMP_RETRIEVE_GuestComposition3892359" GuestDocRef="RESV_RETRIEVE_Guest2956680" GuestSequence="3" GuestTypeCode="CNN" HostLastName="???" IncrementalGuestNumber="1" OverrideFirstName="??" OverrideLastName="?" QuotedPassengerTypeCode="CNN" Sequence="1" SyncStatus="SYNCHED">
+			<GuestItinerarySegment GuestItinerarySegmentDocID="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912062" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" Sequence="1" Status="RR">
+				<AirInfo ClassOfService="Economy" InventoryClass="Q1" OverrideSeatFlag="false"/>
+				<FormOfIdentificationLink FormOfIdentificationDocRef="RESV_GUEST_RETRIEVE_FormOfIdentification2971076" FormOfIdentificationSequence="1" Sequence="1" SyncStatus="SYNCHED"/>
+				<UnitLink UnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923377" UnitSequence="1"/>
+			</GuestItinerarySegment>
+			<RemoteSystemFareQuotePTC ContextCode="TDP_FARES" PassengerTypeCode="CNN" Sequence="1"/>
+		</GuestComposition>
+		<ProviderPayment AmountPaid="2170.00" CreditCardAuthorisationCode="2016021100001000840064140966" CreditCardAuthorisationDateTime="2016-02-11T18:27:07.000" CreditCardCompanyCode="F1" CurrencyCode="CNY" DatePaid="2016-02-11T18:27:22.000" EventSequence="22" FormOfPaymentTypeCode="VIRTUALBANK" ProviderPaymentID="RESV_RESVCOMP_RETRIEVE_ProviderPayment648567" Sequence="1" TransactionID="ANTV2Q811FEB162">
+			<ExtraInformation Name="PaymentIdentifier" Sequence="1" Value="1455186259811"/>
+			<ExtraInformation Name="out_trade_no" Sequence="2" Value="ANTV2Q811FEB162"/>
+		</ProviderPayment>
+		<Document DocID="RESV_RESVCOMP_RETRIEVE_Document663831" DocType="ETICKET" DocumentMethod="ReservationAirTicketingSv" DocumentStatus="ISSUED" EventDocRef="RESV_RESVCOMP_RETRIEVE_Event4502876" EventSequence="21" IssuedDateTime="2016-02-11T18:27:22.000" ManualIssue="true" NameOnDocument="???" PrimaryDocNumber="847-2432638369" Sequence="1">
+			<DocumentValue DocumentValueType="ISSUED" SellingPrice="690" SellingPriceCurrencyCode="CNY" Sequence="1" TransactionDate="2016-02-11T00:00:00.000">
+				<DocumentResCompUnitLink ResComponentSequence="3" ResComponentUnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923377" ResComponentUnitSequence="1" Sequence="1">
+					<DocumentItinerarySegmentLink CouponNumber="1" CouponStatus="OPEN" GuestCompositionSequence="1" GuestItinerarySegmentDocRef="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912062" GuestItinerarySegmentSequence="1"/>
+				</DocumentResCompUnitLink>
+			</DocumentValue>
+			<ProviderPaymentLink ProviderPaymentDocRef="RESV_RESVCOMP_RETRIEVE_ProviderPayment648567" ProviderPaymentSequence="1"/>
+		</Document>
+		<AirSupplementaryElement SendToVendor="true" Sequence="1" SyncStatus="SYNCHED">
+			<SpecialServiceRequest AirlineCode="PN" Code="CHLD" Status="HK" Text="30OCT13"/>
+		</AirSupplementaryElement>
+		<AirSupplementaryElement SendToVendor="false" Sequence="8" SyncStatus="HOST_REMOVE">
+			<OtherServiceInformation AirlineCode="PN" Text="CTCM13883296608"/>
+		</AirSupplementaryElement>
+		<AirSupplementaryElement SendToVendor="true" Sequence="9" SyncStatus="SYNCHED">
+			<OtherServiceInformation AirlineCode="PN" Text="YIGAOZHICHAYIHUAFUWU"/>
+		</AirSupplementaryElement>
+		<AirSupplementaryElement SendToVendor="true" Sequence="10" SyncStatus="SYNCHED">
+			<SpecialServiceRequest AirlineCode="PN" Code="FOID" Status="HK" Text="NI500107201310301212"/>
+		</AirSupplementaryElement>
+	</ResComponent>
+	<ResComponent AncillaryAirComponentCode="MEAL-U" BookingMethod="ReservationMiscBookingSv" ComponentLongDescription="Meal U" ComponentLongName="??????????????????" ComponentShortDescription="????" ComponentShortName="??????????????????" ComponentSubTypeCode="MEALS" ComponentTypeCode="ANCILLARYAIR" CreateDateTime="2016-02-29T10:43:20.000" InternalStatus="PENDING_BOOKING" InventorySystem="TRAVELSKY" LastUpdatedDateTime="2016-02-29T10:48:07.000" ProductCode="MEAL-U" ProductLongDescription="Meal U" ProductLongName="Cabin Delivered Items" ProductShortDescription="Cabin Delivered Items" ProductShortName="Cabin Delivered Items" Quantity="1" ResComponentDocID="RESV_RETRIEVE_ResComponent3892742" SellingComponentCode="MEAL-U" Sequence="4" SessionDocRef="RESV_RETRIEVE_SessionDetails2403179" SessionSequence="2" SourceCode="WESTAIR_WEB" Status="NOT_BOOKED">
+		<ExtraInformation Name="AssessBy" Sequence="2" Value="OD_PASSENGER"/>
+		<ExtraInformation Name="PRODUCT_SUBGROUP_CODE" Sequence="3" Value="NORMAL_MEAL"/>
+		<ExtraInformation Name="UIElementUniqueIdentifier" Sequence="1" Value="0;MEAL;30;MEAL-U;0;empty;AIR_ANCILLARY_ITEMS;empty;empty;CNY;NORMAL_MEAL;0;CKG;3;Mon Mar 07 15:45:00 CST 2016;empty;SYX;Mon Mar 07 13:15:00 CST 2016;empty;"/>
+		<ItinerarySegmentLink DisplayOrder="1" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" SegmentType="ORIGIN" Sequence="6"/>
+		<Policy AbsoluteDeadlineDateTime="2011-01-01T00:00:00.000" ApplicationLevel="FareInfoLevel" AssessmentBasis="GROSS" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" OldValueBasis="CurrentPrice" PercentToApply="0" PolicyCode="TDP-SEAT-CHG-01" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884022" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="Seat Change Policy" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="ExtentOfNewComponent" Sequence="22">
+			<CalculatedAmountDue SellingPrice="0" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2011-01-01T00:00:00.000" ApplicationLevel="FareInfoLevel" AssessmentBasis="GROSS" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="0" PolicyCode="TDP-SEAT-CXL-01" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884023" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Seats Exchange Cancel Policy" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="23">
+			<CalculatedAmountDue SellingPrice="0" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Unit EndDateTime="2016-03-07T15:45:00.000" FareEndCityCode="CKG" FareStartCityCode="SYX" PriceByFareBasisCode="false" PricingRateCode="MEAL-U" PricingSystem="TRAVELSKY" QuoteDateTime="2016-02-29T10:43:20.000" SellingPrice="30" SellingPriceCurrencyCode="CNY" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="1" UnitDocID="RESV_RESVCOMP_RETRIEVE_Unit3923376">
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884022" PolicySequence="22"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884023" PolicySequence="23"/>
+		</Unit>
+		<GuestComposition AgeAtFirstConsume="-1" DateOfBirth="1980-07-25" GuestCompositionID="RESV_RESVCOMP_RETRIEVE_GuestComposition3892360" GuestDocRef="RESV_RETRIEVE_Guest2956678" GuestSequence="1" GuestTypeCode="ADT" HostLastName="???" IncrementalGuestNumber="1" OverrideFirstName="??" OverrideLastName="?" QuotedPassengerTypeCode="ADT" Sequence="1" SyncStatus="PENDING_ADD">
+			<GuestItinerarySegment GuestItinerarySegmentDocID="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912061" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" Sequence="1" Status="RR">
+				<AirInfo ClassOfService="Economy" InventoryClass="Q1" OverrideSeatFlag="false"/>
+				<FormOfIdentificationLink FormOfIdentificationDocRef="RESV_GUEST_RETRIEVE_FormOfIdentification2971074" FormOfIdentificationSequence="1" Sequence="1" SyncStatus="PENDING_ADD"/>
+				<AirSupplementaryElement SendToVendor="true" Sequence="12" SyncStatus="PENDING_ADD">
+					<SpecialServiceRequest AirlineCode="PN" Code="SPML" Text="SYXCKG 6212 Q07Mar MEAL-U"/>
+				</AirSupplementaryElement>
+				<UnitLink UnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923376" UnitSequence="1"/>
+			</GuestItinerarySegment>
+			<RemoteSystemFareQuotePTC ContextCode="TDP_FARES" PassengerTypeCode="ADT" Sequence="1"/>
+		</GuestComposition>
+		<AttributeTypeLink AttributeTypeDocRef="RESV_RETRIEVE_AttributeType275753" AttributeTypeSequence="2" Sequence="1"/>
+	</ResComponent>
+	<ResComponent AncillaryAirComponentCode="MEAL-U" BookingMethod="ReservationMiscBookingSv" ComponentLongDescription="Meal U" ComponentLongName="??????????????????" ComponentShortDescription="????" ComponentShortName="??????????????????" ComponentSubTypeCode="MEALS" ComponentTypeCode="ANCILLARYAIR" CreateDateTime="2016-02-29T10:43:20.000" InternalStatus="PENDING_BOOKING" InventorySystem="TRAVELSKY" LastUpdatedDateTime="2016-02-29T10:48:07.000" ProductCode="MEAL-U" ProductLongDescription="Meal U" ProductLongName="Cabin Delivered Items" ProductShortDescription="Cabin Delivered Items" ProductShortName="Cabin Delivered Items" Quantity="1" ResComponentDocID="RESV_RETRIEVE_ResComponent3892743" SellingComponentCode="MEAL-U" Sequence="5" SessionDocRef="RESV_RETRIEVE_SessionDetails2403179" SessionSequence="2" SourceCode="WESTAIR_WEB" Status="NOT_BOOKED">
+		<ExtraInformation Name="AssessBy" Sequence="2" Value="OD_PASSENGER"/>
+		<ExtraInformation Name="PRODUCT_SUBGROUP_CODE" Sequence="3" Value="NORMAL_MEAL"/>
+		<ExtraInformation Name="UIElementUniqueIdentifier" Sequence="1" Value="0;MEAL;30;MEAL-U;1;empty;AIR_ANCILLARY_ITEMS;empty;empty;CNY;NORMAL_MEAL;0;CKG;3;Mon Mar 07 15:45:00 CST 2016;empty;SYX;Mon Mar 07 13:15:00 CST 2016;empty;"/>
+		<ItinerarySegmentLink DisplayOrder="1" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" SegmentType="ORIGIN" Sequence="6"/>
+		<Policy AbsoluteDeadlineDateTime="2011-01-01T00:00:00.000" ApplicationLevel="FareInfoLevel" AssessmentBasis="GROSS" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" OldValueBasis="CurrentPrice" PercentToApply="0" PolicyCode="TDP-SEAT-CHG-01" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884024" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="BOOKINGCHANGE" PolicyTypeDescription="Seat Change Policy" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="ExtentOfNewComponent" Sequence="24">
+			<CalculatedAmountDue SellingPrice="0" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Policy AbsoluteDeadlineDateTime="2011-01-01T00:00:00.000" ApplicationLevel="FareInfoLevel" AssessmentBasis="GROSS" ConsumerPaysProvider="false" GuaranteeNonChangingFares="false" LanguageCode="zh_CN" PercentToApply="0" PolicyCode="TDP-SEAT-CXL-01" PolicyID="RESV_RESVCOMP_RETRIEVE_Policy22884025" PolicyRetributionActionTypeCode="NONE" PolicyTypeCode="CANCELLATION" PolicyTypeDescription="Seats Exchange Cancel Policy" RelativeDeadlineOffsetUOMCode="HOURS" RelativeDeadlineTimeOfDay="00:00:00.000" RelativeOffsetQuantity="0" ResidualValueApplication="None" Sequence="25">
+			<CalculatedAmountDue SellingPrice="0" SellingPriceCurrencyCode="CNY"/>
+		</Policy>
+		<Unit EndDateTime="2016-03-07T15:45:00.000" FareEndCityCode="CKG" FareStartCityCode="SYX" PriceByFareBasisCode="false" PricingRateCode="MEAL-U" PricingSystem="TRAVELSKY" QuoteDateTime="2016-02-29T10:43:20.000" SellingPrice="30" SellingPriceCurrencyCode="CNY" Sequence="1" StartDateTime="2016-03-07T13:15:00.000" UOMCode="1" UnitDocID="RESV_RESVCOMP_RETRIEVE_Unit3923375">
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884024" PolicySequence="24"/>
+			<PolicyLink PolicyDocRef="RESV_RESVCOMP_RETRIEVE_Policy22884025" PolicySequence="25"/>
+		</Unit>
+		<GuestComposition AgeAtFirstConsume="-1" DateOfBirth="1979-03-29" GuestCompositionID="RESV_RESVCOMP_RETRIEVE_GuestComposition3892361" GuestDocRef="RESV_RETRIEVE_Guest2956679" GuestSequence="2" GuestTypeCode="ADT" HostLastName="??" IncrementalGuestNumber="2" OverrideFirstName="?" OverrideLastName="?" QuotedPassengerTypeCode="ADT" Sequence="1" SyncStatus="PENDING_ADD">
+			<GuestItinerarySegment GuestItinerarySegmentDocID="RESV_RESVCOMP_GUESTCOMPOS_RETRIEVE_GuestItinerarySegment3912060" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" Sequence="1" Status="RR">
+				<AirInfo ClassOfService="Economy" InventoryClass="Q1" OverrideSeatFlag="false"/>
+				<FormOfIdentificationLink FormOfIdentificationDocRef="RESV_GUEST_RETRIEVE_FormOfIdentification2971075" FormOfIdentificationSequence="1" Sequence="1" SyncStatus="PENDING_ADD"/>
+				<AirSupplementaryElement SendToVendor="true" Sequence="13" SyncStatus="PENDING_ADD">
+					<SpecialServiceRequest AirlineCode="PN" Code="SPML" Text="SYXCKG 6212 Q07Mar MEAL-U"/>
+				</AirSupplementaryElement>
+				<UnitLink UnitDocRef="RESV_RESVCOMP_RETRIEVE_Unit3923375" UnitSequence="1"/>
+			</GuestItinerarySegment>
+			<RemoteSystemFareQuotePTC ContextCode="TDP_FARES" PassengerTypeCode="ADT" Sequence="1"/>
+		</GuestComposition>
+		<AttributeTypeLink AttributeTypeDocRef="RESV_RETRIEVE_AttributeType275752" AttributeTypeSequence="1" Sequence="1"/>
+	</ResComponent>
+	<ResComponentGroup InternalGroupTypeCode="REMARKS" ResComponentGroupDocID="RESV_RETRIEVE_ResComponentGroup727112" Sequence="1">
+		<ExtraInformation Name="TourCode" Sequence="1" Value="BASICPLUS"/>
+		<GroupMember ResComponentDocRef="RESV_RETRIEVE_ResComponent3892739" ResComponentSequence="1" Sequence="1"/>
+		<GroupMember ResComponentDocRef="RESV_RETRIEVE_ResComponent3892740" ResComponentSequence="2" Sequence="2"/>
+		<GroupMember ResComponentDocRef="RESV_RETRIEVE_ResComponent3892741" ResComponentSequence="3" Sequence="3"/>
+		<Remark SendToVendor="true" Sequence="9" ShowOnConfirmation="false" ShowOnInvoice="false" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYAMOUNT 6000"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="10" ShowOnConfirmation="false" ShowOnInvoice="false" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYDATE 16-02-29 104619"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="11" ShowOnConfirmation="false" ShowOnInvoice="false" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYAMOUNT 6000"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="12" ShowOnConfirmation="false" ShowOnInvoice="false" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYBILLNO ANTV2Q811FEB163"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="1" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYBANK APAY"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="2" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYDATE 16-02-11 182707"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="4" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYBILLNO ANTV2Q811FEB162"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="5" ShowOnConfirmation="false" ShowOnInvoice="false" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYAMOUNT 219200"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="6" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYDATE 16-02-29 104619"/>
+		</Remark>
+		<Remark SendToVendor="true" Sequence="8" SyncStatus="SYNCHED">
+			<GeneralRemark Text="PAYBILLNO ANTV2Q811FEB163"/>
+		</Remark>
+		<AirSupplementaryElement SendToVendor="true" Sequence="11" ShowOnConfirmation="false" ShowOnInvoice="false" SyncStatus="SYNCHED">
+			<OtherServiceInformation AirlineCode="PN" Text="CTCT13883296608"/>
+		</AirSupplementaryElement>
+	</ResComponentGroup>
+	<ResComponentGroup InternalGroupTypeCode="ANCILLARY_AIR_COMP" ResComponentGroupDocID="RESV_RETRIEVE_ResComponentGroup727113" Sequence="2">
+		<GroupMember PrimaryComponent="true" ResComponentDocRef="RESV_RETRIEVE_ResComponent3892740" ResComponentSequence="2" Sequence="1"/>
+		<GroupMember PrimaryComponent="false" ResComponentDocRef="RESV_RETRIEVE_ResComponent3892743" ResComponentSequence="5" Sequence="2"/>
+	</ResComponentGroup>
+	<ResComponentGroup InternalGroupTypeCode="ANCILLARY_AIR_COMP" ResComponentGroupDocID="RESV_RETRIEVE_ResComponentGroup727114" Sequence="3">
+		<GroupMember PrimaryComponent="true" ResComponentDocRef="RESV_RETRIEVE_ResComponent3892739" ResComponentSequence="1" Sequence="1"/>
+		<GroupMember PrimaryComponent="false" ResComponentDocRef="RESV_RETRIEVE_ResComponent3892742" ResComponentSequence="4" Sequence="2"/>
+	</ResComponentGroup>
+	<Customer CustomerDocID="RESV_RETRIEVE_Customer1850432" FirstName="NameCustomer1" LastName="LastNameCustomer1" Sequence="1">
+		<Email Default="true" EmailAddress="13883296608@139.com" EmailType="1.EAT" Sequence="1" SyncStatus="SYNCHED"/>
+		<Phone Default="true" PhoneNumber="13883296608" PhoneType="5.PTT" Sequence="1" SyncStatus="SYNCHED"/>
+		<RemoteRef Name="TDP_PROFILE_ID" Sequence="1" Value="143477"/>
+		<Payment AmountPaid="2183.00" AttemptNumber="1" BankCode="COMM-DEBIT" BankGroupCode="CPNR" BankID="608" CreditCardCompanyCode="H1" CreditCardNumberMasked="true" CurrencyCode="CNY" FailureReason="USERCANCELLED" FailureReasonDescription="Response from Payment Service has failed, no payment processed." FormOfPaymentTypeCode="ONLINEBANK" InstalmentFrequency="0" MilesAmountPaid="0" NumberOfInstalments="0" OrderCode="ANTV2Q811FEB161" PaymentDocID="RESV_CUSTOMER_RETRIEVE_Payment1119066" ReceivedDate="2016-02-11" Sequence="1">
+			<ExtraInformation Name="PaymentIdentifier" Sequence="1" Value="1455185910935"/>
+			<ExtraInformation Name="out_trade_no" Sequence="2" Value="ANTV2Q811FEB161"/>
+			<RemoteRef Name="DATALEX_PAYMENT_ORDER_CODE" Sequence="1" Value="9175381602116088"/>
+		</Payment>
+		<Payment AmountPaid="2192.00" AttemptNumber="1" BankCode="yue" BankGroupCode="APAY" BankID="801" CreditCardAuthorisationCode="2016021100001000840064140966" CreditCardAuthorisationDateTime="2016-02-11T18:27:07.000" CreditCardCompanyCode="F1" CreditCardNumberMasked="true" CurrencyCode="CNY" FormOfPaymentTypeCode="VIRTUALBANK" InstalmentFrequency="0" MilesAmountPaid="0" NumberOfInstalments="0" OrderCode="ANTV2Q811FEB162" PaymentDocID="RESV_CUSTOMER_RETRIEVE_Payment1119067" ReceivedDate="2016-02-11" Sequence="2" TransactionID="ANTV2Q811FEB162">
+			<ExtraInformation Name="PaymentIdentifier" Sequence="1" Value="1455186259811"/>
+			<ExtraInformation Name="out_trade_no" Sequence="2" Value="ANTV2Q811FEB162"/>
+			<InvoiceAllocation AmountAllocated="2170" AppliedDate="2016-02-11T23:59:59.000" InvoiceSequence="1" MilesAmountAllocated="0" PaymentScheduleSequence="1" Sequence="1"/>
+			<RemoteRef Name="DATALEX_PAYMENT_ORDER_CODE" Sequence="1" Value="9175931602118018"/>
+		</Payment>
+		<Payment AmountPaid="60.00" AttemptNumber="1" BankCode="yue" BankGroupCode="APAY" BankID="801" CreditCardAuthorisationCode="2016022900001000840089310035" CreditCardAuthorisationDateTime="2016-02-29T10:46:19.000" CreditCardCompanyCode="F1" CreditCardNumberMasked="true" CurrencyCode="CNY" FormOfPaymentTypeCode="VIRTUALBANK" InstalmentFrequency="0" MilesAmountPaid="0" NumberOfInstalments="0" OrderCode="ANTV2Q811FEB163" PaymentDocID="RESV_CUSTOMER_RETRIEVE_Payment1119068" ReceivedDate="2016-02-29" Sequence="3" TransactionID="ANTV2Q811FEB163">
+			<ExtraInformation Name="PaymentIdentifier" Sequence="1" Value="1456713908894"/>
+			<ExtraInformation Name="out_trade_no" Sequence="2" Value="ANTV2Q811FEB163"/>
+			<InvoiceAllocation AmountAllocated="60" AppliedDate="2016-02-29T23:59:59.000" InvoiceSequence="1" MilesAmountAllocated="0" PaymentScheduleSequence="2" Sequence="1"/>
+			<RemoteRef Name="DATALEX_PAYMENT_ORDER_CODE" Sequence="1" Value="0875191602298018"/>
+		</Payment>
+	</Customer>
+	<Invoice CustomerDocRef="RESV_RETRIEVE_Customer1850432" CustomerSequence="1" InvoiceNumber="0004257753_1" LastPrintedDate="2016-02-29T10:45:08.000" Sequence="1">
+		<BillingAllocation BillingAllocationDocID="RESV_INVOICE_RETRIEVE_BillingAllocation1780866" ReservationComponentDocRef="RESV_RETRIEVE_ResComponent3892739" ReservationComponentSequence="1" Sequence="1">
+			<AllocatedAmount>740</AllocatedAmount>
+			<AllocatedRedemptionAmt AmountInMoney="740"/>
+		</BillingAllocation>
+		<BillingAllocation BillingAllocationDocID="RESV_INVOICE_RETRIEVE_BillingAllocation1780867" ReservationComponentDocRef="RESV_RETRIEVE_ResComponent3892740" ReservationComponentSequence="2" Sequence="2">
+			<AllocatedAmount>740</AllocatedAmount>
+			<AllocatedRedemptionAmt AmountInMoney="740"/>
+		</BillingAllocation>
+		<BillingAllocation BillingAllocationDocID="RESV_INVOICE_RETRIEVE_BillingAllocation1780868" ReservationComponentDocRef="RESV_RETRIEVE_ResComponent3892741" ReservationComponentSequence="3" Sequence="3">
+			<AllocatedAmount>690</AllocatedAmount>
+			<AllocatedRedemptionAmt AmountInMoney="690"/>
+		</BillingAllocation>
+		<BillingAllocation BillingAllocationDocID="RESV_INVOICE_RETRIEVE_BillingAllocation1780869" ReservationComponentDocRef="RESV_RETRIEVE_ResComponent3892742" ReservationComponentSequence="4" Sequence="4">
+			<AllocatedAmount>30</AllocatedAmount>
+			<AllocatedRedemptionAmt AmountInMoney="30"/>
+		</BillingAllocation>
+		<BillingAllocation BillingAllocationDocID="RESV_INVOICE_RETRIEVE_BillingAllocation1780870" ReservationComponentDocRef="RESV_RETRIEVE_ResComponent3892743" ReservationComponentSequence="5" Sequence="5">
+			<AllocatedAmount>30</AllocatedAmount>
+			<AllocatedRedemptionAmt AmountInMoney="30"/>
+		</BillingAllocation>
+		<PaymentSchedule AmountDue="2170" CreditCardMerchantFeeAmount="22" EventDocRef="RESV_RETRIEVE_Event11801403" EventSequence="19" FormOfPayment="VIRTUALBANK" PaymentDueDate="2016-02-11T18:27:07.000" Sequence="1">
+			<BillingAllocationLink BillingAllocationDocRef="RESV_INVOICE_RETRIEVE_BillingAllocation1780866" BillingAllocationSequence="1"/>
+			<BillingAllocationLink BillingAllocationDocRef="RESV_INVOICE_RETRIEVE_BillingAllocation1780867" BillingAllocationSequence="2"/>
+			<BillingAllocationLink BillingAllocationDocRef="RESV_INVOICE_RETRIEVE_BillingAllocation1780868" BillingAllocationSequence="3"/>
+		</PaymentSchedule>
+		<PaymentSchedule AmountDue="60" EventDocRef="RESV_RETRIEVE_Event11801415" EventSequence="40" FormOfPayment="VIRTUALBANK" PaymentDueDate="2016-02-29T10:46:19.000" Sequence="2">
+			<BillingAllocationLink BillingAllocationDocRef="RESV_INVOICE_RETRIEVE_BillingAllocation1780869" BillingAllocationSequence="4"/>
+			<BillingAllocationLink BillingAllocationDocRef="RESV_INVOICE_RETRIEVE_BillingAllocation1780870" BillingAllocationSequence="5"/>
+		</PaymentSchedule>
+	</Invoice>
+	<Event EventCompletedDateTime="2016-02-11T18:20:58.000" EventEnteredDateTime="2016-02-11T18:15:11.000" EventID="RESV_RETRIEVE_Event11801388" EventScheduledDateTime="2016-02-12T18:18:31.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="1" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:18:29.000" EventEnteredDateTime="2016-02-11T18:16:26.000" EventID="RESV_RETRIEVE_Event11801389" EventTypeCode="AUTO_CANCEL" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="5" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:18:30.000" EventEnteredDateTime="2016-02-11T18:18:29.000" EventID="RESV_RETRIEVE_Event11801390" EventScheduledDateTime="2016-02-11T23:59:59.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="6" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:18:30.000" EventEnteredDateTime="2016-02-11T18:18:30.000" EventID="RESV_RETRIEVE_Event11801391" EventScheduledDateTime="2016-02-11T23:59:59.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="7" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:18:31.000" EventEnteredDateTime="2016-02-11T18:18:30.000" EventID="RESV_RETRIEVE_Event11801392" EventScheduledDateTime="2016-02-11T18:18:30.000" EventTypeCode="CUSTOMER_PAYMENT_AUTH_WAITING" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="7" Sequence="8" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:18:31.000" EventEnteredDateTime="2016-02-11T18:18:31.000" EventID="RESV_RETRIEVE_Event11801393" EventScheduledDateTime="2016-02-11T18:18:31.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="8" Sequence="9" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:24:00.000" EventEnteredDateTime="2016-02-11T18:18:31.000" EventID="RESV_RETRIEVE_Event11801394" EventScheduledDateTime="2016-02-11T18:18:31.000" EventTypeCode="CUSTOMER_PAYMENT_AUTH_WAITING" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="9" Sequence="10" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:23:29.000" EventEnteredDateTime="2016-02-11T18:23:26.000" EventID="RESV_RETRIEVE_Event11801395" EventScheduledDateTime="2016-02-12T18:23:26.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="11" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:27:24.000" EventEnteredDateTime="2016-02-11T18:23:53.000" EventID="RESV_RETRIEVE_Event11801396" EventScheduledDateTime="2016-02-12T18:27:31.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="12" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:24:18.000" EventEnteredDateTime="2016-02-11T18:24:00.000" EventID="RESV_RETRIEVE_Event11801397" EventScheduledDateTime="2016-02-11T18:24:00.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="10" Sequence="13" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:24:19.000" EventEnteredDateTime="2016-02-11T18:24:18.000" EventID="RESV_RETRIEVE_Event11801398" EventScheduledDateTime="2016-02-11T23:59:59.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="14" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:24:19.000" EventEnteredDateTime="2016-02-11T18:24:19.000" EventID="RESV_RETRIEVE_Event11801399" EventScheduledDateTime="2016-02-11T23:59:59.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="15" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:24:20.000" EventEnteredDateTime="2016-02-11T18:24:19.000" EventID="RESV_RETRIEVE_Event11801400" EventScheduledDateTime="2016-02-11T18:24:19.000" EventTypeCode="CUSTOMER_PAYMENT_AUTH_WAITING" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="15" Sequence="16" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:24:20.000" EventEnteredDateTime="2016-02-11T18:24:20.000" EventID="RESV_RETRIEVE_Event11801401" EventScheduledDateTime="2016-02-11T18:24:20.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="16" Sequence="17" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:27:07.000" EventEnteredDateTime="2016-02-11T18:24:20.000" EventID="RESV_RETRIEVE_Event11801402" EventScheduledDateTime="2016-02-11T18:24:20.000" EventTypeCode="CUSTOMER_PAYMENT_AUTH_WAITING" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="17" Sequence="18" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventEnteredDateTime="2016-02-11T18:27:07.000" EventID="RESV_RETRIEVE_Event11801403" EventScheduledDateTime="2016-02-11T18:27:07.000" EventTypeCode="CUSTOMER_PAYMENT_RECEIVED" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="18" Sequence="19" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event Description="Success sending email notification" EventCompletedDateTime="2016-02-11T18:27:31.000" EventEnteredDateTime="2016-02-11T18:27:31.000" EventID="RESV_RETRIEVE_Event11801404" EventTypeCode="SEND_EMAIL_SUCCESS" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="29" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-11T18:30:07.000" EventEnteredDateTime="2016-02-11T18:29:59.000" EventID="RESV_RETRIEVE_Event11801405" EventScheduledDateTime="2016-02-12T18:29:59.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="30" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-14T23:07:10.000" EventEnteredDateTime="2016-02-14T23:06:56.000" EventID="RESV_RETRIEVE_Event11801406" EventScheduledDateTime="2016-02-15T23:07:06.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="31" Source="WESTAIR_WEB" Username="matrixtdp_A235ASDFweqf14f1sdf"/>
+	<Event EventCompletedDateTime="2016-02-27T10:02:27.000" EventEnteredDateTime="2016-02-27T10:02:07.000" EventID="RESV_RETRIEVE_Event11801407" EventScheduledDateTime="2016-02-28T10:02:07.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="32" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:42:36.000" EventEnteredDateTime="2016-02-29T10:42:29.000" EventID="RESV_RETRIEVE_Event11801408" EventScheduledDateTime="2016-03-01T10:42:29.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="33" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:46:32.000" EventEnteredDateTime="2016-02-29T10:43:19.000" EventID="RESV_RETRIEVE_Event11801409" EventScheduledDateTime="2016-03-01T10:46:20.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="34" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:45:08.000" EventEnteredDateTime="2016-02-29T10:45:08.000" EventID="RESV_RETRIEVE_Event11801410" EventScheduledDateTime="2016-02-29T23:59:59.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="35" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:45:09.000" EventEnteredDateTime="2016-02-29T10:45:08.000" EventID="RESV_RETRIEVE_Event11801411" EventScheduledDateTime="2016-02-29T10:45:08.000" EventTypeCode="CUSTOMER_PAYMENT_AUTH_WAITING" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="35" Sequence="36" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:45:09.000" EventEnteredDateTime="2016-02-29T10:45:09.000" EventID="RESV_RETRIEVE_Event11801412" EventScheduledDateTime="2016-02-29T10:45:09.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="36" Sequence="37" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:46:19.000" EventEnteredDateTime="2016-02-29T10:45:09.000" EventID="RESV_RETRIEVE_Event11801413" EventScheduledDateTime="2016-02-29T10:45:09.000" EventTypeCode="CUSTOMER_PAYMENT_AUTH_WAITING" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="37" Sequence="38" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:46:19.000" EventEnteredDateTime="2016-02-29T10:46:19.000" EventID="RESV_RETRIEVE_Event11801414" EventScheduledDateTime="2016-02-29T10:46:19.000" EventTypeCode="CUSTOMER_DEPOSIT_DUE" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="38" Sequence="39" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:46:19.000" EventEnteredDateTime="2016-02-29T10:46:19.000" EventID="RESV_RETRIEVE_Event11801415" EventScheduledDateTime="2016-02-29T10:46:19.000" EventTypeCode="CUSTOMER_PAYMENT_RECEIVED" LastUpdateDateTime="2016-02-29T10:48:06.000" OriginatingEventSequence="39" Sequence="40" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event Description="Success sending email notification" EventCompletedDateTime="2016-02-29T10:46:20.000" EventEnteredDateTime="2016-02-29T10:46:20.000" EventID="RESV_RETRIEVE_Event11801416" EventTypeCode="SEND_EMAIL_SUCCESS" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="41" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:46:34.000" EventEnteredDateTime="2016-02-29T10:46:33.000" EventID="RESV_RETRIEVE_Event11801417" EventScheduledDateTime="2016-03-01T10:46:33.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="49" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:46:35.000" EventEnteredDateTime="2016-02-29T10:46:34.000" EventID="RESV_RETRIEVE_Event11801418" EventScheduledDateTime="2016-03-01T10:46:35.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="50" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event Description="Success sending email notification" EventCompletedDateTime="2016-02-29T10:46:35.000" EventEnteredDateTime="2016-02-29T10:46:35.000" EventID="RESV_RETRIEVE_Event11801419" EventTypeCode="SEND_EMAIL_SUCCESS" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="51" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:47:43.000" EventEnteredDateTime="2016-02-29T10:47:42.000" EventID="RESV_RETRIEVE_Event11801420" EventScheduledDateTime="2016-03-01T10:47:42.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="52" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event Description="Success sending email notification" EventCompletedDateTime="2016-02-29T10:47:42.000" EventEnteredDateTime="2016-02-29T10:47:42.000" EventID="RESV_RETRIEVE_Event11801421" EventTypeCode="SEND_EMAIL_SUCCESS" LastUpdateDateTime="2016-02-29T10:48:06.000" Sequence="53" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:48:11.000" EventEnteredDateTime="2016-02-29T10:47:54.000" EventID="RESV_RETRIEVE_Event11801422" EventScheduledDateTime="2016-03-01T10:48:07.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:48:11.000" Sequence="54" Source="WESTAIR_WEB" Username="13883296608"/>
+	<Event EventCompletedDateTime="2016-02-29T10:49:44.000" EventEnteredDateTime="2016-02-29T10:49:38.000" EventID="RESV_RETRIEVE_Event11801423" EventScheduledDateTime="2016-03-01T10:49:38.000" EventTypeCode="RESERVATION_LOCK" LastUpdateDateTime="2016-02-29T10:49:44.000" Sequence="55" Source="WESTAIR_WEB" Username="13883296608"/>
+	<ExtraInformation ExtendedValue="TICKET_ISSUED" Name="AirOnlyResStatus" Sequence="27"/>
+	<ExtraInformation ExtendedValue="CNY2070" Name="BaseFare" Sequence="12"/>
+	<ExtraInformation ExtendedValue="2016-02-11T18:15:11.000" Name="CreationDate" Sequence="11"/>
+	<ExtraInformation ExtendedValue="2016-03-07T13:15:00.000" Name="DepartureDate" Sequence="9"/>
+	<ExtraInformation ExtendedValue="SYX - CKG [2016/03/07]" Name="Description" Sequence="4"/>
+	<ExtraInformation ExtendedValue="PN6212" Name="FlightNumber" Sequence="17"/>
+	<ExtraInformation ExtendedValue="DOM" Name="IntDomIndicator" Sequence="8"/>
+	<ExtraInformation ExtendedValue="2016-03-07T15:45:00.000" Name="LastArrivalDate" Sequence="6"/>
+	<ExtraInformation ExtendedValue="NTV2Q8" Name="PNRLocator" Sequence="21"/>
+	<ExtraInformation ExtendedValue="???" Name="PassengerName" Sequence="1"/>
+	<ExtraInformation ExtendedValue="??" Name="PassengerName" Sequence="2"/>
+	<ExtraInformation ExtendedValue="???" Name="PassengerName" Sequence="3"/>
+	<ExtraInformation ExtendedValue="CUSTOMER_PAYMENT_RECEIVED" Name="PaymentStatus" Sequence="29"/>
+	<ExtraInformation ExtendedValue="CUSTOMER_PAYMENT_RECEIVED" Name="PaymentStatus" Sequence="30"/>
+	<ExtraInformation ExtendedValue="false" Name="ReservationHiddenStatus" Sequence="18"/>
+	<ExtraInformation ExtendedValue="TICKETED" Name="ReservationStatus" Sequence="26"/>
+	<ExtraInformation ExtendedValue="WESTAIR_WEB" Name="Source" Sequence="14"/>
+	<ExtraInformation ExtendedValue="CNY100" Name="Taxes" Sequence="15"/>
+	<ExtraInformation ExtendedValue="CNY2170" Name="TotalFare" Sequence="16"/>
+	<ExtraInformation ExtendedValue="CNY2230" Name="TotalPrice" Sequence="28"/>
+	<ExtraInformation ExtendedValue="143477" Name="UserName" Sequence="10"/>
+	<Guest DateOfBirth="1980-07-25T00:00:00.000" FirstName="??" GuestDocID="RESV_RETRIEVE_Guest2956678" GuestTypeCode="ADT" LastName="?" Sequence="1" Smoking="false">
+		<Email Default="true" EmailAddress="13883296608@139.com" EmailType="1.EAT" Sequence="1" SyncStatus="SYNCHED"/>
+		<Phone Default="true" PhoneNumber="13883296608" PhoneType="5.PTT" Sequence="1" SyncStatus="SYNCHED"/>
+		<FormOfIdentification DocNumber="510202198007253212" FirstName="??" FormOfIdentificationDocID="RESV_GUEST_RETRIEVE_FormOfIdentification2971074" LastName="?" Sequence="1" Type="ID_CARD"/>
+		<RemoteRef Name="TDP_PROFILE_ID" Sequence="1" Value="143477"/>
+	</Guest>
+	<Guest DateOfBirth="1979-03-29T00:00:00.000" FirstName="?" GuestDocID="RESV_RETRIEVE_Guest2956679" GuestTypeCode="ADT" LastName="?" Sequence="2" Smoking="false">
+		<Phone Default="true" PhoneNumber="13896020322" PhoneType="5.PTT" Sequence="1" SyncStatus="SYNCHED"/>
+		<FormOfIdentification DocNumber="510224197903290429" FirstName="?" FormOfIdentificationDocID="RESV_GUEST_RETRIEVE_FormOfIdentification2971075" LastName="?" Sequence="1" Type="ID_CARD"/>
+		<RemoteRef Name="TDP_PROFILE_ID" Sequence="1" Value="143500"/>
+	</Guest>
+	<Guest DateOfBirth="2013-10-30T00:00:00.000" FirstName="??" GuestDocID="RESV_RETRIEVE_Guest2956680" GuestTypeCode="CNN" LastName="?" Sequence="3" Smoking="false">
+		<Phone Default="true" PhoneNumber="13883296608" PhoneType="5.PTT" Sequence="1" SyncStatus="SYNCHED"/>
+		<FormOfIdentification DocNumber="500107201310301212" FirstName="??" FormOfIdentificationDocID="RESV_GUEST_RETRIEVE_FormOfIdentification2971076" LastName="?" Sequence="1" Type="ID_CARD"/>
+		<RemoteRef Name="TDP_PROFILE_ID" Sequence="1" Value="143501"/>
+	</Guest>
+	<ItinerarySegment ItinerarySegmentDocID="RESV_RETRIEVE_ItinerarySegment2721197" Sequence="1" StartDateTime="2016-03-07T13:15:00.000">
+		<AirSegment AirItinLegIndex="0" AirItinSegmentIndex="0" CarrierCode="PN" EndAirportCode="CKG" EquipmentCode="320" FlightNumber="6212" NumberOfStops="0" SchedArrivalDateTime="2016-03-07T15:45:00.000" SchedDepartureDateTime="2016-03-07T13:15:00.000" StartAirportCode="SYX"/>
+	</ItinerarySegment>
+	<AirItineraryStatusInfo Status="OPEN">
+		<OriginDestinationStatusInfo CancellationAllowed="true" ChangeAllowed="true" Sequence="1" Status="OPEN">
+			<ItinerarySegmentLink DisplayOrder="1" ItinerarySegmentDocRef="RESV_RETRIEVE_ItinerarySegment2721197" ItinerarySegmentSequence="1" SegmentType="ORIGIN" Sequence="9"/>
+		</OriginDestinationStatusInfo>
+	</AirItineraryStatusInfo>
+	<SessionDetails Language="zh_CN" Sequence="1" SessionDocID="RESV_RETRIEVE_SessionDetails2403178" SessionKey="980AB1D9407981EDABF7D8F55320CA32.tomcat1" SourceIP="221.10.117.132"/>
+	<SessionDetails Language="zh_CN" Sequence="2" SessionDocID="RESV_RETRIEVE_SessionDetails2403179" SessionKey="07C01CFF335A06BD4DE5B7C00AC341F0.tomcat2" SourceIP="14.111.63.200"/>
+	<AirFareRules ArrivalAirport="CKG" DepartureAirport="SYX" DepartureDate="2016-03-07" FareReference="Q1/45" FilingAirline="PN" ID="RESV_RETRIEVE_AirFareRules2254142" Sequence="1">
+		<FareRules xmlns="http://www.opentravel.org/OTA/2003/05">
+			<SubSection SubTitle="?????????????">
+				<Paragraph Name="????" ParagraphNumber="1">
+					<Text>????.</Text>
+				</Paragraph>
+				<Paragraph Name="?????" ParagraphNumber="2">
+					<Text>???????????????72???????? - 40%; 
+?????72????12?????- 60%?  
+ ?????12????????? - 100%.</Text>
+				</Paragraph>
+				<Paragraph Name="???" ParagraphNumber="3">
+					<Text>?????????72????????- 60%; 
+ ?????72????12?????- 80%?  
+ ?????12????????? - 100%.</Text>
+				</Paragraph>
+				<Paragraph Name="??????" ParagraphNumber="4">
+					<Text>10KG??????.</Text>
+				</Paragraph>
+				<Paragraph Name="???????" ParagraphNumber="5">
+					<Text>???????5KG??????20cm x 30cm x 40cm??????????.</Text>
+				</Paragraph>
+				<Paragraph Name="??????" ParagraphNumber="6">
+					<Text>????????.</Text>
+				</Paragraph>
+			</SubSection>
+		</FareRules>
+	</AirFareRules>
+	<ProviderRules ArrivalAirport="CKG" DepartureAirport="SYX" DepartureDate="2016-03-07" FilingAirline="PN" ID="RESV_RETRIEVE_ProviderRules2254408" RuleReference="Q1/45" Sequence="1">
+		<FareRules xmlns="http://www.opentravel.org/OTA/2003/05">
+			<SubSection SubTitle="?????????????">
+				<Paragraph Name="????" ParagraphNumber="1">
+					<Text>????.</Text>
+				</Paragraph>
+				<Paragraph Name="?????" ParagraphNumber="2">
+					<Text>???????????????72???????? - 40%; 
+?????72????12?????- 60%?  
+ ?????12????????? - 100%.</Text>
+				</Paragraph>
+				<Paragraph Name="???" ParagraphNumber="3">
+					<Text>?????????72????????- 60%; 
+ ?????72????12?????- 80%?  
+ ?????12????????? - 100%.</Text>
+				</Paragraph>
+				<Paragraph Name="??????" ParagraphNumber="4">
+					<Text>10KG??????.</Text>
+				</Paragraph>
+				<Paragraph Name="???????" ParagraphNumber="5">
+					<Text>???????5KG??????20cm x 30cm x 40cm??????????.</Text>
+				</Paragraph>
+				<Paragraph Name="??????" ParagraphNumber="6">
+					<Text>????????.</Text>
+				</Paragraph>
+			</SubSection>
+		</FareRules>
+	</ProviderRules>
+	<FareFamily FareFamilyCode="BASICPLUS" FareFamilyDocID="RESV_RETRIEVE_FareFamily2278128" FareFamilyName="?????????????" Sequence="1">
+		<AncillaryAirComponent AncillaryAirComponentCode="ENDORSEMENT_ALL" AncillaryAirComponentDescription="????." AncillaryAirComponentDocID="RESV_FAREFAMILY_RETRIEVE_AncillaryAirComponent13668300" AncillaryAirComponentName="????" Mandatory="false" Sequence="1"/>
+		<AncillaryAirComponent AncillaryAirComponentCode="CHANGE_FEE_ALL" AncillaryAirComponentDescription="???????????????72???????? - 40%; &#10;?????72????12?????- 60%?  &#10; ?????12????????? - 100%." AncillaryAirComponentDocID="RESV_FAREFAMILY_RETRIEVE_AncillaryAirComponent13668301" AncillaryAirComponentName="?????" Mandatory="false" Sequence="2"/>
+		<AncillaryAirComponent AncillaryAirComponentCode="REFUND_FEE_ALL" AncillaryAirComponentDescription="?????????72????????- 60%; &#10; ?????72????12?????- 80%?  &#10; ?????12????????? - 100%." AncillaryAirComponentDocID="RESV_FAREFAMILY_RETRIEVE_AncillaryAirComponent13668302" AncillaryAirComponentName="???" Mandatory="false" Sequence="3"/>
+		<AncillaryAirComponent AncillaryAirComponentCode="BAGGAGE_ALLOWANCE" AncillaryAirComponentDescription="10KG??????." AncillaryAirComponentDocID="RESV_FAREFAMILY_RETRIEVE_AncillaryAirComponent13668303" AncillaryAirComponentName="??????" Mandatory="false" Sequence="4"/>
+		<AncillaryAirComponent AncillaryAirComponentCode="CARRY_ON_BAGGAGE_ALLOWANCE" AncillaryAirComponentDescription="???????5KG??????20cm x 30cm x 40cm??????????." AncillaryAirComponentDocID="RESV_FAREFAMILY_RETRIEVE_AncillaryAirComponent13668304" AncillaryAirComponentName="???????" Mandatory="false" Sequence="5"/>
+		<AncillaryAirComponent AncillaryAirComponentCode="MEAL_SERVICE" AncillaryAirComponentDescription="????????." AncillaryAirComponentDocID="RESV_FAREFAMILY_RETRIEVE_AncillaryAirComponent13668305" AncillaryAirComponentName="??????" Mandatory="false" Sequence="6"/>
+	</FareFamily>
+	<AttributeType AttributeTypeCode="AAC_MEAL_TYPE" AttributeTypeDocID="RESV_RETRIEVE_AttributeType275752" Sequence="1">
+		<AttributeValue AttributeValueCode="MEAL_TYPE" Sequence="1" SpecificValue="0"/>
+	</AttributeType>
+	<AttributeType AttributeTypeCode="AAC_MEAL_TYPE" AttributeTypeDocID="RESV_RETRIEVE_AttributeType275753" Sequence="2">
+		<AttributeValue AttributeValueCode="MEAL_TYPE" Sequence="1" SpecificValue="0"/>
+	</AttributeType>
+</Reservation>
