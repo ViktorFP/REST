@@ -6,6 +6,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
+import by.epamlab.Constants;
 import by.epamlab.beans.ifaces.IReservationDAO;
 import by.epamlab.beans.reservations.Reservation;
 import by.epamlab.sax.DataHandler;
@@ -17,7 +18,7 @@ public class ReservationImplXml implements IReservationDAO{
 		XMLReader reader = XMLReaderFactory.createXMLReader();		
 			DataHandler dataHandler = new DataHandler();
 		reader.setContentHandler(dataHandler);
-		reader.parse(this.getClass().getClassLoader().getResource("").getPath()+fileName+".xml");	
+		reader.parse(this.getClass().getClassLoader().getResource("").getPath()+fileName+Constants.EXTENSION);	
 		return dataHandler.getReservation();
 	}
 	
