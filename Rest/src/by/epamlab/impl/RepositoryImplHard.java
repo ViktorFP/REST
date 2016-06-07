@@ -21,6 +21,7 @@ import by.epamlab.factories.ReservationFactory;
 
 public class RepositoryImplHard implements IRepositoryDAO {
 	private static Map<String, Reservation> repository = new HashMap<>();
+	private static List<Customer> customers = new ArrayList<>();
 
 	@Override
 	public Reservation getReservation(String fileName) throws IOException, SAXException {
@@ -58,22 +59,34 @@ public class RepositoryImplHard implements IRepositoryDAO {
 	@Override
 	public List<Customer> getCustomers() throws IOException, SAXException {
 		scan();
-		List<Customer> list = new ArrayList<>();
 		Set<Map.Entry<String, Reservation>> set = repository.entrySet();
 		for (Entry<String, Reservation> e : set) {
-			list.add(e.getValue().getCustomer());
+			Customer customer = e.getValue().getCustomer();
+			if (!customers.contains(customer)) {
+				customers.add(customer);
+			}
 		}
-		return list;
+		return customers;
 	}
 
 	@Override
 	public Customer getCustomer(String id) throws IOException, SAXException {
-		List<Customer> list = getCustomers();
-		for (Customer c : list) {
+		for (Customer c : getCustomers()) {
 			if (c.getCustomerDocID().equals(id)) {
 				return c;
 			}
 		}
 		return null;
+	}
+
+	@Override
+	public Customer addCustomer(String firstName, String lastName) throws IOException, SAXException {
+		Customer customer = new Customer();
+		customer.setFirstName(firstName);
+		customer.setLastName(lastName);
+		synchronized (customers) {
+			customers.add(customer);
+		}
+		return customer;
 	}
 }

@@ -12,6 +12,7 @@ public class Runner {
 	private static final String PATTERN = "rest";
 	private final static String CUSTOMERS = "list/json";
 	private final static String CUSTOMER_ID = "id";
+	private final static String CUSTOMER_ADD = "add";
 
 	public static void main(String[] args) {
 		String repFile = "1";// "2";
@@ -29,10 +30,14 @@ public class Runner {
 		System.out.println("\nAll customers: " + response.getEntity(String.class));
 
 		String id = "RESV_RETRIEVE_Customer1850432";
-		WebResource webResourceGet = client.resource(BASE_URI + "/" + PATTERN + PATH_CUSTOMER + CUSTOMER_ID)
-				.queryParam("id", id);
-		response = webResourceGet.get(ClientResponse.class);
+		customerResource = client.resource(BASE_URI + "/" + PATTERN + PATH_CUSTOMER + CUSTOMER_ID).queryParam("id", id);
+		response = customerResource.get(ClientResponse.class);
 		System.out.println("\nCustomer with ID " + id + ": " + response.getEntity(String.class));
+
+		customerResource = client.resource(BASE_URI + "/" + PATTERN + PATH_CUSTOMER + CUSTOMER_ADD);
+		response = customerResource.type("application/json").post(ClientResponse.class, "NewName;NewLastName");
+		String responseEntity = response.getEntity(String.class);
+		System.out.println("\nAdded customer: " + responseEntity);
 	}
 
 	private static String getClientResponse(WebResource resource) {

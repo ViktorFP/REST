@@ -14,4 +14,6 @@ public interface IRepositoryDAO {
 	List<Customer> getCustomers() throws IOException, SAXException;
 
 	Customer getCustomer(String id) throws IOException, SAXException;
+
+	Customer addCustomer(String firstName, String lastName) throws IOException, SAXException;
 }

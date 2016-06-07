@@ -2,7 +2,9 @@ package by.epamlab;
 
 import java.io.IOException;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -59,6 +61,21 @@ public class CustomerInfo {
 		try {
 			return toJson(repositoryDAO.getCustomer(id));
 		} catch (IOException | SAXException e) {
+			return e.getMessage();
+		}
+	}
+
+	// http://localhost:8080/Rest/rest/CustomerInfoService/customer/add
+	// 405 - Method Not Allowed
+	@POST
+	@Path(CUSTOMER + "add")
+	@Consumes("application/json")
+	@Produces("application/json")
+	public String addCustomer(String data) {
+		String[] newCustomerData = data.split(";");
+		try {
+			return toJson(repositoryDAO.addCustomer(newCustomerData[0], newCustomerData[1]));
+		} catch (Exception e) {
 			return e.getMessage();
 		}
 	}
