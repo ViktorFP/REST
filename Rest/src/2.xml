@@ -341,7 +341,7 @@
 		<GroupMember PrimaryComponent="true" ResComponentDocRef="RESV_RETRIEVE_ResComponent3892739" ResComponentSequence="1" Sequence="1"/>
 		<GroupMember PrimaryComponent="false" ResComponentDocRef="RESV_RETRIEVE_ResComponent3892742" ResComponentSequence="4" Sequence="2"/>
 	</ResComponentGroup>
-	<Customer CustomerDocID="RESV_RETRIEVE_Customer1850432" FirstName="NameCustomer2" LastName="LastNameCustomer2" Sequence="1">
+	<Customer CustomerDocID="RESV_RETRIEVE_Customer18504324" FirstName="NameCustomer2" LastName="LastNameCustomer2" Sequence="1">
 		<Email Default="true" EmailAddress="22242577538@139.com" EmailType="1.EAT" Sequence="1" SyncStatus="SYNCHED"/>
 		<Phone Default="true" PhoneNumber="22242577538" PhoneType="5.PTT" Sequence="1" SyncStatus="SYNCHED"/>
 		<RemoteRef Name="TDP_PROFILE_ID" Sequence="1" Value="143477"/>

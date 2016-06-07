@@ -3,8 +3,12 @@ package by.epamlab.impl;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 import org.xml.sax.SAXException;
 
@@ -12,6 +16,7 @@ import by.epamlab.Constants;
 import by.epamlab.beans.ifaces.IRepositoryDAO;
 import by.epamlab.beans.ifaces.IReservationDAO;
 import by.epamlab.beans.reservations.Reservation;
+import by.epamlab.beans.reservations.customer.Customer;
 import by.epamlab.factories.ReservationFactory;
 
 public class RepositoryImplHard implements IRepositoryDAO {
@@ -48,5 +53,27 @@ public class RepositoryImplHard implements IRepositoryDAO {
 				getReservation(name);
 			}
 		}
+	}
+
+	@Override
+	public List<Customer> getCustomers() throws IOException, SAXException {
+		scan();
+		List<Customer> list = new ArrayList<>();
+		Set<Map.Entry<String, Reservation>> set = repository.entrySet();
+		for (Entry<String, Reservation> e : set) {
+			list.add(e.getValue().getCustomer());
+		}
+		return list;
+	}
+
+	@Override
+	public Customer getCustomer(String id) throws IOException, SAXException {
+		List<Customer> list = getCustomers();
+		for (Customer c : list) {
+			if (c.getCustomerDocID().equals(id)) {
+				return c;
+			}
+		}
+		return null;
 	}
 }
