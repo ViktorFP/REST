@@ -80,13 +80,24 @@ public class RepositoryImplHard implements IRepositoryDAO {
 	}
 
 	@Override
-	public Customer addCustomer(String firstName, String lastName) throws IOException, SAXException {
-		Customer customer = new Customer();
-		customer.setFirstName(firstName);
-		customer.setLastName(lastName);
+	public Customer addCustomer(Customer customer) throws IOException, SAXException {
+		customer.setCustomerDocID(String.valueOf(customers.size() + 1));
 		synchronized (customers) {
 			customers.add(customer);
 		}
 		return customer;
+	}
+
+	@Override
+	public Customer updateCustomer(Customer customer) throws IOException, SAXException {
+		for (Customer c : getCustomers()) {
+			if (c.getCustomerDocID().equals(customer.getCustomerDocID())) {
+				synchronized (customers) {
+					c = customer;
+				}
+				return c;
+			}
+		}
+		return null;
 	}
 }

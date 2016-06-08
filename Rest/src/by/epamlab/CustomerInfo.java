@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -12,6 +13,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.xml.sax.SAXException;
@@ -72,15 +74,30 @@ public class CustomerInfo {
 	@Consumes("application/json")
 	@Produces("application/json")
 	public String addCustomer(String data) {
-		String[] newCustomerData = data.split(";");
 		try {
-			return toJson(repositoryDAO.addCustomer(newCustomerData[0], newCustomerData[1]));
+			return toJson(repositoryDAO.addCustomer(fromJson(data)));
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+	}
+
+	@PUT
+	@Path(CUSTOMER + "update")
+	@Consumes({ MediaType.APPLICATION_JSON })
+	@Produces({ MediaType.APPLICATION_JSON })
+	public String updateCustomerName(String data) {
+		try {
+			return toJson(repositoryDAO.updateCustomer(fromJson(data)));
 		} catch (Exception e) {
 			return e.getMessage();
 		}
 	}
 
 	// -------------------
+	private Customer fromJson(String data) throws JsonParseException, JsonMappingException, IOException {
+		return new ObjectMapper().readValue(data, Customer.class);
+	}
+
 	private String toJson(Object object) throws JsonGenerationException, JsonMappingException, IOException {
 		return new ObjectMapper().writeValueAsString(object);
 	}
