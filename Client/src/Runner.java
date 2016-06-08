@@ -20,6 +20,7 @@ public class Runner {
 	private final static String CUSTOMER_ID = "id";
 	private final static String CUSTOMER_ADD = "add";
 	private final static String CUSTOMER_UPDATE = "update";
+	private final static String CUSTOMER_DELETE = "delete";
 
 	public static void main(String[] args) {
 		String repFile = "1";// "2";
@@ -56,13 +57,17 @@ public class Runner {
 			// Added customer:
 			// {"customerDocID":3,"firstName":"NewName","lastName":"NewLastName","sequence":0,"email":null,"phone":null,"payments":null}
 			// change it
-
 			customer = mapper.readValue(responseEntity, Customer.class);
 			customer.setFirstName("ChangedName");
 			customerResource = client.resource(BASE_URI + "/" + PATTERN + PATH_CUSTOMER + CUSTOMER_UPDATE);
 			response = customerResource.type("application/json").put(ClientResponse.class,
 					mapper.writeValueAsString(customer));
 			System.out.println("\nAfter change: " + response.getEntity(String.class));
+			
+			customerResource = client.resource(BASE_URI + "/" + PATTERN + PATH_CUSTOMER + CUSTOMER_DELETE);
+			response = customerResource.type("application/json").delete(ClientResponse.class,
+					mapper.writeValueAsString(customer));
+			System.out.println("\nCustomer deleted: " + response.getEntity(String.class));			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -17,4 +17,5 @@ public interface IRepositoryDAO {
 
 	Customer addCustomer(Customer customer) throws IOException, SAXException;
 	Customer updateCustomer(Customer customer) throws IOException, SAXException;
+	boolean deleteCustomer(String id);
 }

@@ -100,4 +100,17 @@ public class RepositoryImplHard implements IRepositoryDAO {
 		}
 		return null;
 	}
+
+	@Override
+	public boolean deleteCustomer(String id) {
+		for (Customer c : customers) {
+			if (c.getCustomerDocID().equals(id)) {
+				synchronized (customers) {
+					customers.remove(c);					
+				}
+				return true;
+			}
+		}
+		return false;
+	}
 }

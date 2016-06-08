@@ -3,6 +3,7 @@ package by.epamlab;
 import java.io.IOException;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -91,6 +92,19 @@ public class CustomerInfo {
 		} catch (Exception e) {
 			return e.getMessage();
 		}
+	}
+
+	@DELETE
+	@Path(CUSTOMER + "delete")
+	@Produces({ MediaType.APPLICATION_JSON })
+	public String deleteCustomer(String data) {
+		boolean success = false;
+		try {
+			success = repositoryDAO.deleteCustomer(fromJson(data).getCustomerDocID());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return String.valueOf(success);
 	}
 
 	// -------------------
